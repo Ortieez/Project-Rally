@@ -27,9 +27,4 @@ public class NewBehaviourScript : MonoBehaviour
             }
         }
     }
-
-    public void GoToMainMenu()
-    {
-        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-    }
 }
