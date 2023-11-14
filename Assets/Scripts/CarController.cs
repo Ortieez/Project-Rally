@@ -76,8 +76,12 @@ public class CarController : MonoBehaviour
 
     private void UpdateNeedleOnSpeedometer()
     {
-        float speed = GetComponent<Rigidbody>().velocity.magnitude;
-        float rotation = speed * 3f;
+        float speed = GetComponent<Rigidbody>().velocity.magnitude * 3.6f;
+        float rpm = speed * 0.1f;
+        
+        Debug.Log("Speed: " + speed);
+        
+        float rotation = speed;
         float startRotation = 131.6f;
 
         GameObject.Find("SpeedometerNeedle").transform.rotation = Quaternion.Euler(0, 0, (float)startRotation - rotation);
