@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Max & Adam
   productName: Project Rally
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: aebd19b3d7afdb943932c225a820d579, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.9490197, g: 0.91372555, b: 0.8078432, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -80,6 +80,7 @@ PlayerSettings:
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
+  androidAutoRotationBehavior: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -162,7 +163,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.Maxmilian---Adam.Project-Rally
+    Standalone: com.Max---Adam.Project-Rally
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -411,7 +412,6 @@ PlayerSettings:
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchEnableFileSystemTrace: 0
-  switchUseGOLDLinker: 0
   switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
   switchNSODependencies: 
@@ -651,7 +651,24 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    GameCoreScarlett: BCG_RCC
+    GameCoreXboxOne: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    LinuxHeadlessSimulation: BCG_RCC
+    Nintendo Switch: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    PS4: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    PS5: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    QNX: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    Stadia: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    VisionOS: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    Windows Store Apps: BCG_RCC
+    XboxOne: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
+    iPhone: BCG_RCC
+    tvOS: BCG_RCC;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -758,7 +775,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
