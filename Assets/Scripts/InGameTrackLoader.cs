@@ -20,4 +20,11 @@ public class InGameTrackLoader : MonoBehaviour {
 
         car.GetComponent<PrometeoCarController>().carSpeedText = speedText;
     }
+
+    public void Update() {
+        float speed = float.Parse(speedText.text);
+        float targetFOV = Mathf.Clamp(70 + speed, 70, 100);
+        float smoothTime = 0.3f;
+        cinemachineVirtualCamera.m_Lens.FieldOfView = Mathf.Lerp(cinemachineVirtualCamera.m_Lens.FieldOfView, targetFOV, smoothTime * Time.deltaTime);
+    }
 }

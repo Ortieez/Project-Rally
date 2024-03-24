@@ -25,11 +25,13 @@ public class NewBehaviourScript : MonoBehaviour
             {
                 Time.timeScale = 0;
                 canvas.enabled = true;
+                AudioListener.volume = 0;
                 ShowBestLap();
             }
             else
             {
                 Time.timeScale = 1;
+                AudioListener.volume = 1;
                 canvas.enabled = false;
             }
         }

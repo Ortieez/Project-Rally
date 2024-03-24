@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class TimeTrialCounter : MonoBehaviour {
@@ -15,6 +16,9 @@ public class TimeTrialCounter : MonoBehaviour {
     private float nextUpdate = 0;
 
     public BigInteger bestLap = 0;
+    public List<GameObject> checkpoints = new List<GameObject>();
+
+    public int currentCheckpoint = 0;
 
     void Update() {
         if (isCounting) {
@@ -27,7 +31,6 @@ public class TimeTrialCounter : MonoBehaviour {
             }
         }
     }
-
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
             if (isCounting) {
@@ -43,6 +46,12 @@ public class TimeTrialCounter : MonoBehaviour {
     }
 
     public void StopCounting() {
+        if (currentCheckpoint != checkpoints.Count - 1) {
+            return;  
+        } 
+
+        currentCheckpoint = 0;
+
         isCounting = false;
         times.Add(time);
 
@@ -60,7 +69,9 @@ public class TimeTrialCounter : MonoBehaviour {
         }
         recentTimesText.text = recentTimes;
 
-        
+        for (int i = 0; i < checkpoints.Count; i++) {
+            checkpoints[i].SetActive(true);
+        }
     }
 
     public void ResetCounting() {
