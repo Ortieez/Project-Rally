@@ -1,14 +1,28 @@
 ﻿# Project Rally
-(Není konečný název)
+
+## Webová Prezentace
+
+- [Github Repo](https://github.com/Ortieez/ProjectRallyWeb)
+- [Website URL](https://project-rally-web.vercel.app)
+
+## Gameplay Video
+
+- [Youtube Unlisted Video](https://youtu.be/caJbYnX3zP4)
+
+## Screenshots
+
+![Image](./Images/img1.png)
+![Image](./Images/img2.png)
+![Image](./Images/img3.png)
+![Image](./Images/img4.png)
 
 ## Popis
 
 - Project Rally je 3D závodní hra, která se odehrává v polootevřeném světě. (namodelované tratě)
-- Hra bude určena pro Mobilní zařízení (Android) a možná i pro PC.
+- Hra je určena pro PC.
 - Hráči si budou moct vybrat z několika vozidel, které se liší v rychlosti, ovladatelnosti a dalších vlastnostech.
-- Každé z vozidel bude mít své vlastní zvuky.
-- Hráč bude mít možnost si vybrat z několika tratí, které se budou lišit v délce, obtížnosti a dalších vlastnostech.
-- Hráč bude jezdit sám na trati, ale bude si moct zvolit obtížnost "AI", které pouze nastaví časovou základnu, kterou hráč musí překonat.
+- Každé z vozidel má své vlastní zvuky.
+- Hráč může svůj best lap nahrát do DB, kde se následně zobrazí v tabulce mezi ostatními hráči
 
 ## Technologie
 

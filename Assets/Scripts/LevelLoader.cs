@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
 	public void LoadMainMenu()
     {
 	    Time.timeScale = 1;
+		AudioListener.volume = 1;
         StartCoroutine(LoadLevel(0));
     }
 	
